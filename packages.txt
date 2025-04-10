@@ -9,3 +9,6 @@ xautolock
 ttf-jetbrains-mono-nerd
 ttf-victor-mono-nerd
 tmux
+neovim
+xclip
+fzf
