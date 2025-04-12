@@ -27,6 +27,8 @@ return {
 			mason_tool_installer.setup({
 				ensure_installed = {
 					-- you can turn off/on auto_update per tool
+                    "black",
+                    "ruff"
 				},
 
 				auto_update = true,
@@ -110,7 +112,7 @@ return {
 			end)
 
 			require("mason-lspconfig").setup({
-				ensure_installed = {}, -- Ensure tsserver is installed
+				ensure_installed = { "pyright" }, -- Ensure tsserver is installed
 				handlers = {
 					-- this first function is the "default handler"
 					-- it applies to every language server without a "custom handler"
